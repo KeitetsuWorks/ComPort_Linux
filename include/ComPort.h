@@ -16,15 +16,15 @@
 /**
  * @name    TRUE/FALSE
  */
-/*! @{ */
+/** @{ */
 #ifndef TRUE
-#define TRUE        1               /*!< TRUE */
+#define TRUE        1               /**< TRUE */
 #endif
 
 #ifndef FALSE
-#define FALSE       0               /*!< FALSE */
+#define FALSE       0               /**< FALSE */
 #endif
-/*! @} */
+/** @} */
 
 
 /**
@@ -38,14 +38,14 @@
  * @brief   シリアルポート情報構造体のポインタ
  */
 typedef struct ComPort_st {
-    int fd;                         /*!< ファイルディスクリプタ */
-    struct termios comTioBackup;    /*!< 端末制御設定のバックアップ */
-    tcflag_t comBaudRate;           /*!< ボーレート */
-    tcflag_t comByteSize;           /*!< データビット */
-    tcflag_t comParity;             /*!< パリティビット */
-    tcflag_t comStopBits;           /*!< ストップビット */
-    unsigned int comVMin;           /*!< 最小受信データバイト数 */
-    unsigned int comVTime;          /*!< タイムアウト時間 */
+    int fd;                         /**< ファイルディスクリプタ */
+    struct termios comTioBackup;    /**< 端末制御設定のバックアップ */
+    tcflag_t comBaudRate;           /**< ボーレート */
+    tcflag_t comByteSize;           /**< データビット */
+    tcflag_t comParity;             /**< パリティビット */
+    tcflag_t comStopBits;           /**< ストップビット */
+    unsigned int comVMin;           /**< 最小受信データバイト数 */
+    unsigned int comVTime;          /**< タイムアウト時間 */
 } COMPORT_T, *COMPORT;
 
 
